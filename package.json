@@ -3,15 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@aws-amplify/api": "^2.2.0",
+    "@aws-amplify/pubsub": "^2.1.8",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "aws-amplify": "^2.2.7",
+    "aws-amplify-react": "^3.1.8",
+    "aws-amplify-react-native": "^3.2.2",
+    "aws-sdk": "^2.648.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
+    "dev": "(node ./src/components/ses_sendmail.js) & yarn start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -19,6 +26,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "proxy": "http://13.58.100.188:443/flask",
   "browserslist": {
     "production": [
       ">0.2%",

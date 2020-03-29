@@ -1,0 +1,30 @@
+{
+    "auth": {
+        "midterms776ed9b5": {
+            "service": "Cognito",
+            "providerPlugin": "awscloudformation",
+            "dependsOn": [],
+            "customAuth": false
+        }
+    },
+    "predictions": {
+        "translateTexte91e17d9": {
+            "providerPlugin": "awscloudformation",
+            "service": "Translate",
+            "convertType": "translateText"
+        },
+        "identifyTextbad6d8e9": {
+            "providerPlugin": "awscloudformation",
+            "service": "RekognitionAndTextract",
+            "dependsOn": [],
+            "identifyType": "identifyText"
+        }
+    },
+    "hosting": {
+        "amplifyhosting": {
+            "service": "amplifyhosting",
+            "providerPlugin": "awscloudformation",
+            "type": "manual"
+        }
+    }
+}
